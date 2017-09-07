@@ -1,0 +1,7 @@
+{{location}}
+<h1>Search color</h1>
+<ng2-completer [(ngModel)]="searchStr" [datasource]="dataService" [minSearchLength]="0"></ng2-completer>
+<h1>Search captain</h1>
+<ng2-completer [(ngModel)]="captain" [datasource]="captains" [minSearchLength]="0"></ng2-completer>
+<h1>Search City</h1>
+<ng2-completer [(ngModel)]="getData" [datasource]="cities" [minSearchLength]="0" (keyup)="onTestGet($event)"></ng2-completer>
